@@ -67,4 +67,4 @@ if ($count < 1) {
 </section>
 
 <?php require_once "location-services.php";
-require_once "../base/footer.php" ?>
+      require_once "../base/footer.php" ?>
