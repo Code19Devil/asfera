@@ -1,0 +1,351 @@
+/* defining universal height  */
+.ht-100 {
+  height: 100px;
+}
+
+.ht-200 {
+  height: 200px;
+}
+
+.ht-300 {
+  height: 300px;
+}
+
+.ht-400 {
+  height: 400px;
+}
+
+.ht-500 {
+  height: 500px;
+}
+
+.ht-600 {
+  height: 600px;
+}
+
+.ht-700 {
+  height: 700px;
+}
+
+.ht-800 {
+  height: 800px;
+}
+
+.ht-900 {
+  height: 900px;
+}
+
+.ht-1000 {
+  height: 1000px;
+}
+
+.ht-1200 {
+  height: 1200px;
+}
+
+/* defining universal width */
+.wt-100 {
+  width: 100px;
+}
+
+.wt-200 {
+  width: 200px;
+}
+
+.wt-300 {
+  width: 300px;
+}
+
+.wt-400 {
+  width: 400px;
+}
+
+.wt-500 {
+  width: 500px;
+}
+
+.wt-600 {
+  width: 600px;
+}
+
+.wt-700 {
+  width: 700px;
+}
+
+.wt-800 {
+  width: 800px;
+}
+
+.wt-900 {
+  width: 900px;
+}
+
+.wt-1000 {
+  width: 1000px;
+}
+
+
+/* custom settings */
+
+.title {
+  font-size: 42px;
+  line-height: 1.30556;
+}
+
+.radius-20 {
+  border-radius: 17px;
+}
+
+#particles-js {
+  width: 100%;
+}
+
+.bg-primary {
+  background-color: #6689ff;
+  color: white;
+}
+
+.normal-text {
+  text-transform: none;
+}
+
+.text-danger {
+  color: red;
+}
+
+.list-text {
+  list-style-type: disc;
+  font-size: 16px;
+}
+
+.list-text li {
+  padding-top: 10px;
+  font-style: oblique;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* custom dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* custom footer */
+.footer {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li a {
+  color: #6699ff;
+}
+
+.footer li a:hover {
+  color: white;
+}
+
+/* custom card */
+.custom-card {
+  max-width: 240px;
+  max-height: 240px;
+  margin: auto;
+}
+
+.custom-card-2 {
+  max-width: 95%;
+  margin: auto;
+}
+
+.blog-card {
+  padding: 20px;
+  margin-top: 10px;
+  max-width: 300px;
+  height: 550px;
+  /* margin-left:20px; */
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+@media screen and (max-width: 767px) {
+  .blog-card {
+    margin: auto;
+  }
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+}
+
+.blog-card p {
+  font-size: 15px;
+}
+
+.creator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  vertical-align: bottom;
+  padding: 20px;
+}
+
+.read-blog {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blog-divider {
+  height: 100px;
+  display: block;
+  clear: both;
+}
+
+.sub-blog-title {
+  width: 90%;
+  margin: 4vh auto;
+}
+
+.sub-blog-content {
+  width: 90%;
+  margin: 4vh auto;
+}
+
+.latest-blogs {
+  margin-top: 100px;
+}
+
+.sub_blog_image {
+  float: left;
+  padding: 10px;
+}
+
+.career-row {
+  width: 95%;
+  margin: auto;
+}
+
+.career-card {
+  padding: 20px;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+.career-card img {
+  width: 100%;
+  margin-top: 20px;
+  height: 200px;
+}
+
+/* custom border */
+.border-1s {
+  border: 1px solid #6699ff;
+}
+
+/* custom float */
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  margin: 20px 0 20px 0;
+}
+
+/* designing table */
+/* making table scrollable */
+.show-data {
+  width: 100%;
+  height: 550px;
+  white-space: nowrap;
+  display: block;
+  overflow: auto;
+}
+
+/* making th to stick on head */
+th {
+  position: sticky;
+  top: 0px;
+}
+
+td,
+th {
+  padding: 0 2vh;
+  border: 1px solid black;
+}
+
+.message {
+  max-width: 600px;
+  white-space: pre-wrap;
+}
+
+.bg-theme {
+  background: #6689ff;
+  color: white;
+}
+
+.ico {
+  font-size: 20px;
+}
+
+.ico:hover {
+  font-size: 30px;
+}
+
+.location-card {
+  padding: 6px;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.missed-call-card {
+  padding: 30px;
+  ;
+  margin-top: 10px;
+  max-width: 400px;
+  height: 150px;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  font-family: "Alata", sans-serif;
+}
+
+.client-align {
+  display: inline-block;
+}
+
+.location-tab {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 2.8em;
+  color: white;
+}
+
+.location-tab-design {
+  margin: 1px auto;
+  border-radius: 20% 20% 20% 20%;
+  /* transform: skew(-15deg); */
+}
+
+#client img {
+  height: 80px;
+  width: 150px;
+}

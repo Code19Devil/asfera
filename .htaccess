@@ -1,0 +1,51 @@
+#starting engine
+RewriteEngine On
+
+#redirecting some backlinks
+Redirect 301 /gallery http://asfera.in/about-us
+
+Redirect 301 /solutions/Asfercon-VCX-Video-Conference-system-exchange http://asfera.in/solutions/asfercon-vcx-video-conference-system-exchange
+Redirect 301 /solutions/Asfercon-ACX-Audio-Conference-solution-exchange http://asfera.in/solutions/asfercon-acx-audio-conference-solution-exchange
+Redirect 301 /products/Voice-blaster-call-campaigner http://asfera.in/products/voice-blaster-call-campaigner
+
+Redirect 301 /Best-call-center-services-provider-in-Delhi http://asfera.in/blog/best-call-center-services-provider-in-delhi
+Redirect 301 /Call-Center-Solution-for-Your-Business http://asfera.in/blog/call-center-solution-for-your-business
+Redirect 301 /what-is-call-center http://asfera.in/blog/what-is-call-center
+Redirect 301 /what-is-call-center-software http://asfera.in/blog/what-is-call-center-software
+Redirect 301 /what-is-cloud-call-center-solution http://asfera.in/blog/what-is-cloud-call-center-solution
+Redirect 301 /what-is-gsm-gateway http://asfera.in/blog/what-is-gsm-gateway
+Redirect 301 /what-is-inbound-and-outbound-calls http://asfera.in/blog/what-is-inbound-and-outbound-calls
+Redirect 301 /what-is-ivr-system http://asfera.in/blog/what-is-ivr-system
+
+#some url rewriting
+RewriteRule ^home index.php
+
+#adding blog entry
+RewriteCond %blog/(.+) !-f
+RewriteRule ^blog/(.+) blog-details.php?slug=$1
+
+#adding .php for files with no extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+) $1.php
+
+#redirecting all html request to php files with hidden extension
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+#redirecting location page on pattern
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/(.+) /services/$2.php?location=$1
+
+#redirecting to 500 page if file not found
+ErrorDocument 500 http://localhost/asfera/500-Internal-Server-Error
+
+#redirecting to 404 page if file not found
+ErrorDocument 404 http://localhost/asfera/404-Not-Found
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

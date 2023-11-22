@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /items/basic/assets/css
+Disallow: /items/basic/assets/fonts
+Disallow: /items/basic/assets/js
+Disallow: /admin/
+Sitemap: https://www.asfera.in/sitemap.xml
+
